@@ -1,9 +1,71 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Website Concepts</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>*{box-sizing:border-box;margin:0}body{background:#0a0a0c;color:#f4f4f5;font:16px/1.5 Inter,system-ui,sans-serif;min-height:100vh;padding:8vw 6vw}
-small{color:#8b8b93;letter-spacing:.2em;font-size:12px;font-weight:600}h1{font-size:clamp(44px,9vw,120px);line-height:.95;letter-spacing:-.05em;font-weight:800;margin:18px 0 60px}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-a{display:block;padding:28px;border:1px solid #232328;border-radius:20px;background:#111114;text-decoration:none;color:inherit;transition:.25s}
-a:hover{transform:translateY(-6px);border-color:#b5ff6b}a b{display:block;font-size:26px;letter-spacing:-.03em}a span{color:#8b8b93}a i{float:right;font-style:normal;color:#b5ff6b}</style></head>
-<body><small>WEB DESIGN CONCEPTS</small><h1>Three sites.<br>Three vibes.</h1>
-<div class="g"><a href="cafe/"><i>→</i><b>Maison Ember</b><span>Cafe</span></a><a href="barbershop/"><i>→</i><b>Northline Barber</b><span>Barbershop</span></a><a href="saas/"><i>→</i><b>Flowdesk</b><span>SaaS</span></a></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Explain a Technical Product to Non-Technical Buyers</title>
+<meta name="description" content="Five practical rules for writing about complex technology so decision-makers actually understand it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf7;--ink:#1a1d21;--mut:#6a7079;--acc:#2f5bea;--line:#e5e2da}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:19px/1.75 'Source Serif 4',Georgia,serif;-webkit-font-smoothing:antialiased}
+.bar{height:4px;background:var(--acc);width:0;position:fixed;top:0;left:0;z-index:9}
+header{font:600 14px 'Inter',system-ui,sans-serif;padding:22px 6%;display:flex;justify-content:space-between;border-bottom:1px solid var(--line);color:var(--mut)}
+header b{color:var(--ink)}
+article{width:min(720px,90%);margin:60px auto 90px}
+.kicker{font:600 13px 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+h1{font:800 clamp(36px,6vw,58px)/1.05 'Inter',sans-serif;letter-spacing:-.04em;margin:16px 0 22px}
+.meta{font:14px 'Inter',sans-serif;color:var(--mut);padding-bottom:30px;border-bottom:1px solid var(--line);margin-bottom:36px}
+h2{font:700 27px/1.25 'Inter',sans-serif;letter-spacing:-.025em;margin:48px 0 14px}
+p{margin-bottom:22px}
+blockquote{border-left:4px solid var(--acc);padding:4px 0 4px 22px;margin:34px 0;font-size:23px;line-height:1.5;font-style:italic}
+.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin:30px 0;font:16px/1.65 'Inter',sans-serif}
+.box b{display:block;margin-bottom:6px}
+.cta{background:var(--ink);color:#fff;border-radius:18px;padding:34px;margin-top:56px;font:17px/1.6 'Inter',sans-serif}
+.cta h3{font-size:22px;margin-bottom:8px}
+.note{font:13px/1.5 'Inter',sans-serif;color:var(--mut);margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<header><b>Writing sample</b><span>Content marketing · Technology</span></header>
+<article>
+ <div class="kicker">Content Strategy</div>
+ <h1>How to Explain a Technical Product to Non-Technical Buyers</h1>
+ <div class="meta">By Umar · 5 min read</div>
+
+ <p>Most technical products don't lose deals because they are bad. They lose because the person holding the budget never understood what they were buying.</p>
+ <p>The CTO read the documentation and loved it. The CFO read the landing page and felt nothing. In the end, the CFO signs the contract, or doesn't. If you create content for a technology company, your real job is to close that gap. Here are five rules that help.</p>
+
+ <h2>1. Start with the problem, not the product</h2>
+ <p>Buyers don't wake up wanting an "AI-powered platform". They wake up with a late project, a rising cloud bill or a team that keeps missing deadlines. Open with that problem in the exact words your audience would use in a meeting.</p>
+ <blockquote>If your first paragraph could be copied onto a competitor's website, it isn't saying anything yet.</blockquote>
+
+ <h2>2. Replace jargon with a picture</h2>
+ <p>Every technical term is a small wall. Some readers will climb it; many will simply leave. Swap abstractions for something concrete. An API is a waiter carrying orders between the kitchen and the table. A load balancer is the host who decides which table gets the next guest.</p>
+ <div class="box"><b>Quick test</b>Read a sentence out loud to someone outside your industry. If they ask "what does that mean?", rewrite it.</div>
+
+ <h2>3. Talk about outcomes in numbers</h2>
+ <p>"Faster deployments" is a feature. "Releases that took two days now take two hours" is a reason to buy. Whenever you have real figures from a customer or a pilot, put them near the top. When you don't have them yet, say what you measure and how, instead of inventing impressive-sounding claims.</p>
+
+ <h2>4. Write for two readers at once</h2>
+ <p>Technical content on LinkedIn is read by engineers and by the people who approve their spending. Give the engineer enough detail to trust you, and give the executive a short summary that stands alone. A clear opening, a simple structure and a closing takeaway usually does both.</p>
+
+ <h2>5. End with one clear next step</h2>
+ <p>A great article that ends with "contact us for more" wastes the reader's momentum. Offer one specific action: a short demo, a checklist, a 15-minute call. Make it easy to say yes and obvious what happens afterwards.</p>
+
+ <h2>Measure, then improve</h2>
+ <p>Publishing is the start. Track impressions, reading depth, comments and the number of profile visits or enquiries after each article. Compare topics, not just numbers: which problem made people stop scrolling? Do more of that, and cut what nobody finished.</p>
+
+ <div class="cta"><h3>The short version</h3>Lead with the problem, use pictures instead of jargon, prove it with numbers, write for both readers, and give one next step. Technical buyers are people first, and people buy what they understand.</div>
+
+ <p class="note">Portfolio writing sample. Prepared with AI assistance and edited by the author.</p>
+</article>
+<script>
+addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
+</script>
+</body>
+</html>
